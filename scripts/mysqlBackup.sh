@@ -10,5 +10,4 @@ if ! [[ -d "$backupPath" ]] ; then
      mkdir -p "$backupPath"
 fi
 
-#  -h mysql => for dockerize
-mysqldump -u$dbUsername -p$dbPassword $dbName -h mysql > $backupPath$backupName
+nice -n 15 mysqldump -u$dbUsername -p$dbPassword $dbName -h mysql > $backupPath$backupName

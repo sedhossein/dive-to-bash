@@ -1,5 +1,5 @@
 # dive-to-bash
 
-###tips
+### tips
 - chmod +x FILENAME
 - 

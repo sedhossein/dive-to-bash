@@ -10,4 +10,4 @@ elif ! [[ -d "$target" ]] ; then
      mkdir -p "$target"
 fi
 
-zip -r $backupPath$backupName $target
+nice -n 15 zip -r $backupPath$backupName $target
