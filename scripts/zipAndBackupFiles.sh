@@ -10,4 +10,8 @@ elif ! [[ -d "$target" ]] ; then
      mkdir -p "$target"
 fi
 
+# zip files
 nice -n 15 zip -r $backupPath$backupName $target
+
+# upload to cloud storage
+sudo -u YOUR_USER nice -n 15 mega-put $backupPath$backupName /bk/images
