@@ -11,7 +11,7 @@ elif ! [[ -d "$target" ]] ; then
 fi
 
 # zip files
-nice -n 15 zip -r $backupPath$backupName $target
+sudo -u YOUR_USER nice -n 15 zip -r $backupPath$backupName $target
 
 # upload to cloud storage
 sudo -u YOUR_USER nice -n 15 mega-put $backupPath$backupName /bk/images
